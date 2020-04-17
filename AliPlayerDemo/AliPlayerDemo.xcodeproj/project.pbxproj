@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		585BA068244972B000AE325C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 585BA067244972B000AE325C /* AppDelegate.m */; };
+		585BA06B244972B000AE325C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 585BA06A244972B000AE325C /* SceneDelegate.m */; };
+		585BA06E244972B000AE325C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585BA06D244972B000AE325C /* ViewController.m */; };
+		585BA071244972B000AE325C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585BA06F244972B000AE325C /* Main.storyboard */; };
+		585BA073244972B400AE325C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585BA072244972B400AE325C /* Assets.xcassets */; };
+		585BA076244972B400AE325C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 585BA074244972B400AE325C /* LaunchScreen.storyboard */; };
+		585BA079244972B400AE325C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 585BA078244972B400AE325C /* main.m */; };
+		585BA083244972B400AE325C /* AliPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585BA082244972B400AE325C /* AliPlayerDemoTests.m */; };
+		585BA08E244972B400AE325C /* AliPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 585BA08D244972B400AE325C /* AliPlayerDemoUITests.m */; };
+		8C924E25B4ECB94549E10324 /* libPods-AliPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A3253D3765BB2DE1A2A9BF /* libPods-AliPlayerDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		585BA07F244972B400AE325C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585BA05B244972B000AE325C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585BA062244972B000AE325C;
+			remoteInfo = AliPlayerDemo;
+		};
+		585BA08A244972B400AE325C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 585BA05B244972B000AE325C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585BA062244972B000AE325C;
+			remoteInfo = AliPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		585BA063244972B000AE325C /* AliPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AliPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		585BA066244972B000AE325C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		585BA067244972B000AE325C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		585BA069244972B000AE325C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		585BA06A244972B000AE325C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		585BA06C244972B000AE325C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		585BA06D244972B000AE325C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		585BA070244972B000AE325C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		585BA072244972B400AE325C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		585BA075244972B400AE325C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		585BA077244972B400AE325C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585BA078244972B400AE325C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		585BA07E244972B400AE325C /* AliPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		585BA082244972B400AE325C /* AliPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPlayerDemoTests.m; sourceTree = "<group>"; };
+		585BA084244972B400AE325C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		585BA089244972B400AE325C /* AliPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AliPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		585BA08D244972B400AE325C /* AliPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AliPlayerDemoUITests.m; sourceTree = "<group>"; };
+		585BA08F244972B400AE325C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A3253D3765BB2DE1A2A9BF /* libPods-AliPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AliPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C3B813FD3C8A3160834597 /* Pods-AliPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-AliPlayerDemo/Pods-AliPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A293A0BCB03D4EF1BE26C303 /* Pods-AliPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AliPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-AliPlayerDemo/Pods-AliPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		585BA060244972B000AE325C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C924E25B4ECB94549E10324 /* libPods-AliPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585BA07B244972B400AE325C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585BA086244972B400AE325C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3CC773225A58E77429609BD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A293A0BCB03D4EF1BE26C303 /* Pods-AliPlayerDemo.debug.xcconfig */,
+				82C3B813FD3C8A3160834597 /* Pods-AliPlayerDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		585BA05A244972B000AE325C = {
+			isa = PBXGroup;
+			children = (
+				585BA065244972B000AE325C /* AliPlayerDemo */,
+				585BA081244972B400AE325C /* AliPlayerDemoTests */,
+				585BA08C244972B400AE325C /* AliPlayerDemoUITests */,
+				585BA064244972B000AE325C /* Products */,
+				3CC773225A58E77429609BD7 /* Pods */,
+				D09D94418A719BA5A2214E27 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		585BA064244972B000AE325C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				585BA063244972B000AE325C /* AliPlayerDemo.app */,
+				585BA07E244972B400AE325C /* AliPlayerDemoTests.xctest */,
+				585BA089244972B400AE325C /* AliPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		585BA065244972B000AE325C /* AliPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				585BA066244972B000AE325C /* AppDelegate.h */,
+				585BA067244972B000AE325C /* AppDelegate.m */,
+				585BA069244972B000AE325C /* SceneDelegate.h */,
+				585BA06A244972B000AE325C /* SceneDelegate.m */,
+				585BA06C244972B000AE325C /* ViewController.h */,
+				585BA06D244972B000AE325C /* ViewController.m */,
+				585BA06F244972B000AE325C /* Main.storyboard */,
+				585BA072244972B400AE325C /* Assets.xcassets */,
+				585BA074244972B400AE325C /* LaunchScreen.storyboard */,
+				585BA077244972B400AE325C /* Info.plist */,
+				585BA078244972B400AE325C /* main.m */,
+			);
+			path = AliPlayerDemo;
+			sourceTree = "<group>";
+		};
+		585BA081244972B400AE325C /* AliPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				585BA082244972B400AE325C /* AliPlayerDemoTests.m */,
+				585BA084244972B400AE325C /* Info.plist */,
+			);
+			path = AliPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		585BA08C244972B400AE325C /* AliPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				585BA08D244972B400AE325C /* AliPlayerDemoUITests.m */,
+				585BA08F244972B400AE325C /* Info.plist */,
+			);
+			path = AliPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		D09D94418A719BA5A2214E27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A3253D3765BB2DE1A2A9BF /* libPods-AliPlayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		585BA062244972B000AE325C /* AliPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585BA092244972B400AE325C /* Build configuration list for PBXNativeTarget "AliPlayerDemo" */;
+			buildPhases = (
+				277FD5CD38BEB0A85B5C74B0 /* [CP] Check Pods Manifest.lock */,
+				585BA05F244972B000AE325C /* Sources */,
+				585BA060244972B000AE325C /* Frameworks */,
+				585BA061244972B000AE325C /* Resources */,
+				E9B3DE74E22EBD204E97BDDB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AliPlayerDemo;
+			productName = AliPlayerDemo;
+			productReference = 585BA063244972B000AE325C /* AliPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		585BA07D244972B400AE325C /* AliPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585BA095244972B400AE325C /* Build configuration list for PBXNativeTarget "AliPlayerDemoTests" */;
+			buildPhases = (
+				585BA07A244972B400AE325C /* Sources */,
+				585BA07B244972B400AE325C /* Frameworks */,
+				585BA07C244972B400AE325C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585BA080244972B400AE325C /* PBXTargetDependency */,
+			);
+			name = AliPlayerDemoTests;
+			productName = AliPlayerDemoTests;
+			productReference = 585BA07E244972B400AE325C /* AliPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		585BA088244972B400AE325C /* AliPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 585BA098244972B400AE325C /* Build configuration list for PBXNativeTarget "AliPlayerDemoUITests" */;
+			buildPhases = (
+				585BA085244972B400AE325C /* Sources */,
+				585BA086244972B400AE325C /* Frameworks */,
+				585BA087244972B400AE325C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				585BA08B244972B400AE325C /* PBXTargetDependency */,
+			);
+			name = AliPlayerDemoUITests;
+			productName = AliPlayerDemoUITests;
+			productReference = 585BA089244972B400AE325C /* AliPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		585BA05B244972B000AE325C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = lyeah;
+				TargetAttributes = {
+					585BA062244972B000AE325C = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					585BA07D244972B400AE325C = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 585BA062244972B000AE325C;
+					};
+					585BA088244972B400AE325C = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 585BA062244972B000AE325C;
+					};
+				};
+			};
+			buildConfigurationList = 585BA05E244972B000AE325C /* Build configuration list for PBXProject "AliPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 585BA05A244972B000AE325C;
+			productRefGroup = 585BA064244972B000AE325C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				585BA062244972B000AE325C /* AliPlayerDemo */,
+				585BA07D244972B400AE325C /* AliPlayerDemoTests */,
+				585BA088244972B400AE325C /* AliPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		585BA061244972B000AE325C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585BA076244972B400AE325C /* LaunchScreen.storyboard in Resources */,
+				585BA073244972B400AE325C /* Assets.xcassets in Resources */,
+				585BA071244972B000AE325C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585BA07C244972B400AE325C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585BA087244972B400AE325C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277FD5CD38BEB0A85B5C74B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AliPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9B3DE74E22EBD204E97BDDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliPlayerDemo/Pods-AliPlayerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AliPlayerDemo/Pods-AliPlayerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AliPlayerDemo/Pods-AliPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		585BA05F244972B000AE325C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585BA06E244972B000AE325C /* ViewController.m in Sources */,
+				585BA068244972B000AE325C /* AppDelegate.m in Sources */,
+				585BA079244972B400AE325C /* main.m in Sources */,
+				585BA06B244972B000AE325C /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585BA07A244972B400AE325C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585BA083244972B400AE325C /* AliPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		585BA085244972B400AE325C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				585BA08E244972B400AE325C /* AliPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		585BA080244972B400AE325C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585BA062244972B000AE325C /* AliPlayerDemo */;
+			targetProxy = 585BA07F244972B400AE325C /* PBXContainerItemProxy */;
+		};
+		585BA08B244972B400AE325C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585BA062244972B000AE325C /* AliPlayerDemo */;
+			targetProxy = 585BA08A244972B400AE325C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		585BA06F244972B000AE325C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585BA070244972B000AE325C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		585BA074244972B400AE325C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				585BA075244972B400AE325C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		585BA090244972B400AE325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		585BA091244972B400AE325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		585BA093244972B400AE325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A293A0BCB03D4EF1BE26C303 /* Pods-AliPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67WAZ4SGXX;
+				INFOPLIST_FILE = AliPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		585BA094244972B400AE325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82C3B813FD3C8A3160834597 /* Pods-AliPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67WAZ4SGXX;
+				INFOPLIST_FILE = AliPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		585BA096244972B400AE325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AliPlayerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AliPlayerDemo.app/AliPlayerDemo";
+			};
+			name = Debug;
+		};
+		585BA097244972B400AE325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AliPlayerDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AliPlayerDemo.app/AliPlayerDemo";
+			};
+			name = Release;
+		};
+		585BA099244972B400AE325C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AliPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AliPlayerDemo;
+			};
+			name = Debug;
+		};
+		585BA09A244972B400AE325C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AliPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AliPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		585BA05E244972B000AE325C /* Build configuration list for PBXProject "AliPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585BA090244972B400AE325C /* Debug */,
+				585BA091244972B400AE325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585BA092244972B400AE325C /* Build configuration list for PBXNativeTarget "AliPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585BA093244972B400AE325C /* Debug */,
+				585BA094244972B400AE325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585BA095244972B400AE325C /* Build configuration list for PBXNativeTarget "AliPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585BA096244972B400AE325C /* Debug */,
+				585BA097244972B400AE325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		585BA098244972B400AE325C /* Build configuration list for PBXNativeTarget "AliPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				585BA099244972B400AE325C /* Debug */,
+				585BA09A244972B400AE325C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 585BA05B244972B000AE325C /* Project object */;
+}

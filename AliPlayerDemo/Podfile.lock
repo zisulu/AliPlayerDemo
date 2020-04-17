@@ -1,0 +1,26 @@
+PODS:
+  - AliPlayerSDK_iOS (5.1.1):
+    - AliPlayerSDK_iOS/AliPlayerSDK (= 5.1.1)
+  - AliPlayerSDK_iOS/AliPlayerSDK (5.1.1)
+  - Masonry (1.1.0)
+  - WoodPeckeriOS (1.2.4)
+
+DEPENDENCIES:
+  - AliPlayerSDK_iOS
+  - Masonry
+  - WoodPeckeriOS
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AliPlayerSDK_iOS
+    - Masonry
+    - WoodPeckeriOS
+
+SPEC CHECKSUMS:
+  AliPlayerSDK_iOS: 7d17c27f627dabee3a67fe4ffe0c7be5b3cf6bb0
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  WoodPeckeriOS: bff163c8c996efd45e2fb562f68f6db7f901ac90
+
+PODFILE CHECKSUM: e3207334fbd0553de0a29daec7141302ae2bf8ee
+
+COCOAPODS: 1.9.1
