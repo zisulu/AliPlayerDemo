@@ -36,6 +36,7 @@
  */
 typedef bool (*PlayURLConverCallback)(const char* srcURL, const char* srcFormat, char** destURL);
 
+
 typedef enum AVPStatus: NSUInteger {
     /** @brief 空转，闲时，静态 */
     /**** @brief Idle */
@@ -154,6 +155,14 @@ typedef enum AVPPropertyKey: NSUInteger {
     AVP_KEY_CONNECT_INFO  = 1,
 } AVPPropertyKey;
 
+/**@brief IP 解析类型*/
+/**@brief IP resolve type*/
+typedef enum AVPIpResolveType: NSUInteger {
+    AVPIpResolveWhatEver,
+    AVPIpResolveV4,
+    AVPIpResolveV6,
+} AVPIpResolveType;
+
 typedef enum AVPOption: NSUInteger {
     /**
      * @brief 渲染的fps。类型为Float
@@ -254,5 +263,20 @@ typedef enum AVPLogLevel: NSUInteger {
     LOG_LEVEL_DEBUG   = 48,
     LOG_LEVEL_TRACE   = 56,
 } AVPLogLevel;
+
+typedef enum _AVPStsStatus {
+  Valid,
+  Invalid,
+  Pending
+} AVPStsStatus;
+
+typedef struct _AVPStsInfo {
+  NSString* accId;
+  NSString* accSecret;
+  NSString* token;
+  NSString* region;
+  NSString* formats;
+} AVPStsInfo;
+
 
 #endif /* AVPDef_h */

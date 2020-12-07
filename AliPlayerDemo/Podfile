@@ -9,6 +9,8 @@ target 'AliPlayerDemo' do
 
   pod 'WoodPeckeriOS', :configurations => ['Debug']
   pod 'Masonry'
-  pod 'AliPlayerSDK_iOS'
+  pod 'AliPlayerSDK_iOS', '5.2.2' # 播放报错，有错误日志
+#  pod 'AliPlayerSDK_iOS', '5.2.1' # 无法播放，连错误日志都没有
+#  pod 'AliPlayerSDK_iOS', '5.1.6' # 正常播放
 
 end

@@ -32,7 +32,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.player start];
 }
 
 - (void)setupWhenViewDidLoad
@@ -69,8 +68,8 @@
     player.delegate = self;
     player.enableHardwareDecoder = YES;
     player.loop = YES;
-    AVPUrlSource *urlSource = [[AVPUrlSource alloc] init];
-    urlSource.playerUrl = [NSURL URLWithString:@"https://dh2.v.netease.com/2017/cg/fxtpty.mp4"];
+    player.autoPlay = YES;
+    AVPUrlSource *urlSource = [[AVPUrlSource alloc] urlWithString:@"http://magimg.gdljs.net/dl31.mp4"];
     
     [player setUrlSource:urlSource];
     AVPCacheConfig *cacheConfig = [[AVPCacheConfig alloc] init];
@@ -93,6 +92,10 @@
     [player setConfig:config];
     player.playerView = self.playerView;
     [player prepare];
+    [AliPlayer setEnableLog:YES];
+    [AliPlayer setLogCallbackInfo:LOG_LEVEL_ERROR callbackBlock:^(AVPLogLevel logLevel, NSString *strLog) {
+        NSLog(@"*** 错误日志 *** %@", strLog);
+    }];
     self.player = player;
 }
 
@@ -123,7 +126,6 @@
 
 - (void)onLoadingProgress:(AliPlayer *)player progress:(float)progress
 {
-    self.player.currentPosition
     NSLog(@"播放进度：%@", @(progress));
 }
 

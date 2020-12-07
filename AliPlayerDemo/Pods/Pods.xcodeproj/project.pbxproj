@@ -53,26 +53,26 @@
 		D783A8A5A426DBF85162B92142651218 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A514B8C01CE943057E34AA7F9348CCE /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B91156A9A899FAB76770B210F6B8A021 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B55912A789F725079B42A46A09D71DA /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		ED469E6DB4D03579A30CD9F141691998 /* Pods-AliPlayerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3996BA3AC3430F0EB8950C1C6AB8093C /* Pods-AliPlayerDemo-dummy.m */; };
 		F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A86EC8CC05462669AFF717071BCEBAE1 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFCF0FD9EB736590F0DF0220B7F3EB55 /* Pods-AliPlayerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3996BA3AC3430F0EB8950C1C6AB8093C /* Pods-AliPlayerDemo-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D72CA2436CB7EC697700503B84B5E31 /* PBXContainerItemProxy */ = {
+		484DDD7A0DCA60852ECC6276363606B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 849570DFC27665175463482CD1A7929F;
 			remoteInfo = AliPlayerSDK_iOS;
 		};
-		97839CB4B9BB5686078D43CEE1DEAAD1 /* PBXContainerItemProxy */ = {
+		59B190303D11EC68B5E3D650F4935B94 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1150BA9E63B3AAABFCA7335BD73FD9FD;
 			remoteInfo = WoodPeckeriOS;
 		};
-		F443C36144244A28A6F81D9D9A0FF20D /* PBXContainerItemProxy */ = {
+		77DE25B24DEA7491EF262A3838DB9307 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -139,7 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA9241C95481D8057DDAEA73A2B2312F /* Frameworks */ = {
+		2C8C94CDA8F87DF1CC459829452A9ED2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -324,13 +324,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1FCCD990BA2FCF4C81E5080355FC2A82 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2697A8D6B2989B073B236F7B4BF67F30 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +343,13 @@
 				46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */,
 				A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */,
 				E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62715248E38D5D315B92EEADD2B37143 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,18 +375,18 @@
 		};
 		B4D29DE97014440BFCDA0D00EFDDE5A1 /* Pods-AliPlayerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BACB20B61F09CEE030CFFB4E9793EB1 /* Build configuration list for PBXNativeTarget "Pods-AliPlayerDemo" */;
+			buildConfigurationList = 4DA5A149A02E1F9CB1E5220587DDEDDA /* Build configuration list for PBXNativeTarget "Pods-AliPlayerDemo" */;
 			buildPhases = (
-				1FCCD990BA2FCF4C81E5080355FC2A82 /* Headers */,
-				B84F9E6495921AAB3E4A72A7D0C277A7 /* Sources */,
-				DA9241C95481D8057DDAEA73A2B2312F /* Frameworks */,
+				62715248E38D5D315B92EEADD2B37143 /* Headers */,
+				86D49B94244C9640C6546A76BB13480F /* Sources */,
+				2C8C94CDA8F87DF1CC459829452A9ED2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00CE8A4BBB086109AE9D9D37DA91A707 /* PBXTargetDependency */,
-				ABB358E4E3686D19C52370A96F957E43 /* PBXTargetDependency */,
-				C87992918892BCF110C85D6025B70676 /* PBXTargetDependency */,
+				C4BDBBA0D8BAC4EBAE9036085CB1E713 /* PBXTargetDependency */,
+				1C201B893147845BE96C91C23E029D45 /* PBXTargetDependency */,
+				B21269120A10F375213983F43773F374 /* PBXTargetDependency */,
 			);
 			name = "Pods-AliPlayerDemo";
 			productName = "Pods-AliPlayerDemo";
@@ -442,34 +442,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B84F9E6495921AAB3E4A72A7D0C277A7 /* Sources */ = {
+		86D49B94244C9640C6546A76BB13480F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED469E6DB4D03579A30CD9F141691998 /* Pods-AliPlayerDemo-dummy.m in Sources */,
+				FFCF0FD9EB736590F0DF0220B7F3EB55 /* Pods-AliPlayerDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00CE8A4BBB086109AE9D9D37DA91A707 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AliPlayerSDK_iOS;
-			target = 849570DFC27665175463482CD1A7929F /* AliPlayerSDK_iOS */;
-			targetProxy = 6D72CA2436CB7EC697700503B84B5E31 /* PBXContainerItemProxy */;
-		};
-		ABB358E4E3686D19C52370A96F957E43 /* PBXTargetDependency */ = {
+		1C201B893147845BE96C91C23E029D45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = F443C36144244A28A6F81D9D9A0FF20D /* PBXContainerItemProxy */;
+			targetProxy = 77DE25B24DEA7491EF262A3838DB9307 /* PBXContainerItemProxy */;
 		};
-		C87992918892BCF110C85D6025B70676 /* PBXTargetDependency */ = {
+		B21269120A10F375213983F43773F374 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WoodPeckeriOS;
 			target = 1150BA9E63B3AAABFCA7335BD73FD9FD /* WoodPeckeriOS */;
-			targetProxy = 97839CB4B9BB5686078D43CEE1DEAAD1 /* PBXContainerItemProxy */;
+			targetProxy = 59B190303D11EC68B5E3D650F4935B94 /* PBXContainerItemProxy */;
+		};
+		C4BDBBA0D8BAC4EBAE9036085CB1E713 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AliPlayerSDK_iOS;
+			target = 849570DFC27665175463482CD1A7929F /* AliPlayerSDK_iOS */;
+			targetProxy = 484DDD7A0DCA60852ECC6276363606B3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -490,7 +490,7 @@
 			};
 			name = Debug;
 		};
-		53B3313D224E919E131FE601838D26B7 /* Release */ = {
+		49CDC1568AF605992A9FD02201F2AF45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C52CB94CF0EBD00076FA80F9C5FF8D11 /* Pods-AliPlayerDemo.release.xcconfig */;
 			buildSettings = {
@@ -528,24 +528,7 @@
 			};
 			name = Debug;
 		};
-		6A6B4D0426A32422940DA416B5C339B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F745A335DB375A275A8CBA0C781BCD59 /* WoodPeckeriOS.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		846C0A4F85DB7EDAE88D5E2564B89C7B /* Debug */ = {
+		69588742E1946D6FE731436F5F464BF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49DCBAD06678D953DDE09D7A18F28590 /* Pods-AliPlayerDemo.debug.xcconfig */;
 			buildSettings = {
@@ -565,6 +548,23 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		6A6B4D0426A32422940DA416B5C339B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F745A335DB375A275A8CBA0C781BCD59 /* WoodPeckeriOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		8AEEA5CC30001CB70A788717A32DBAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -784,11 +784,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BACB20B61F09CEE030CFFB4E9793EB1 /* Build configuration list for PBXNativeTarget "Pods-AliPlayerDemo" */ = {
+		4DA5A149A02E1F9CB1E5220587DDEDDA /* Build configuration list for PBXNativeTarget "Pods-AliPlayerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				846C0A4F85DB7EDAE88D5E2564B89C7B /* Debug */,
-				53B3313D224E919E131FE601838D26B7 /* Release */,
+				69588742E1946D6FE731436F5F464BF9 /* Debug */,
+				49CDC1568AF605992A9FD02201F2AF45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

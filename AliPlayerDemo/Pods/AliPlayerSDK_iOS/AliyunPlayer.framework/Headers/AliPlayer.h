@@ -13,6 +13,8 @@
 #import "AVPMediaInfo.h"
 #import "AVPConfig.h"
 #import "AVPCacheConfig.h"
+@protocol CicadaAudioSessionDelegate;
+@protocol CicadaRenderDelegate;
 
 OBJC_EXPORT
 @interface AliPlayer : NSObject
@@ -83,6 +85,10 @@ OBJC_EXPORT
  */
 - (void)setAuthSource:(AVPVidAuthSource*)source;
 
+- (void)setLiveStsSource:(AVPLiveStsSource*)source;
+
+- (void)updateLiveStsInfo:(NSString*)accId accKey:(NSString*)accKey token:(NSString*)token region:(NSString*)region;
+
 /**
  @brief 播放准备，异步
  */
@@ -152,6 +158,16 @@ OBJC_EXPORT
  @see AVPSeekMode
  */
 -(void)seekToTime:(int64_t)time seekMode:(AVPSeekMode)seekMode;
+
+/**
+ * 设置精准seek的最大间隔。
+ * @param delta 间隔时间，单位毫秒
+ */
+/****
+* set the maximum interval of precision seek.
+* @param delta interval in milliseconds
+*/
+-(void)setMaxAccurateSeekDelta:(int)delta;
 
 /**
  @brief 截图 AVPImage: mac平台返回NSImage，iOS平台返回UIImage
@@ -243,7 +259,6 @@ OBJC_EXPORT
  @param callback The function pointer of the callback.
  */
 - (void) setPlayUrlConvertCallback:(PlayURLConverCallback)callback;
-
 /**
  @brief 播放器设置
  @param config AVPConfig类型
@@ -382,6 +397,48 @@ OBJC_EXPORT
  */
 -(void) setDefaultBandWidth:(int)bandWidth;
 
+#if TARGET_OS_IPHONE
+/**
+ @brief 设置视频的背景色
+ @param color  the color
+ */
+/****
+ @brief Set video background color
+ @param color  the color
+ */
+-(void) setVideoBackgroundColor:(UIColor *)color;
+
+/**
+ @brief 设置视频快速启动
+ @param enable  true：开启，false：关闭
+ */
+/****
+ @brief Set video fast start
+ @param enable  true：enable，false: disable
+ */
+-(void) setFastStart:(BOOL)enable;
+
+/**
+ @brief 设置ip解析类型
+ @param type  ip解析类型
+ */
+/****
+ @brief Set ip resolve type
+ @param type ip resolve type
+ */
+-(void) setIPResolveType:(AVPIpResolveType)type;
+#endif
+
+/**
+ @brief 设置代理 参考AVPEventReportParamsDelegate
+ @see AVPEventReportParamsDelegate
+ */
+/****
+ @brief Set a proxy.  See AVPEventReportParamsDelegate.
+ @see AVPEventReportParamsDelegate
+*/
+-(void) setEventReportParamsDelegate:(id<AVPEventReportParamsDelegate>)delegate;
+
 /**
  * @brief 获取播放器的参数
  *
@@ -396,6 +453,19 @@ OBJC_EXPORT
  */
 -(NSString *) getOption:(AVPOption)key;
 
+
+/**
+ @brief 向播放器的组件发送命令。
+ @param content 命令内容。
+ @return 命令执行结果， < 0 失败。
+ */
+/****
+ @brief Send command to component
+ @param content command content
+ @return < 0 on Error
+ */
+
+- (int)invokeComponent:(NSString *)content;
 /**
  @brief 获取SDK版本号信息
  */
@@ -560,6 +630,21 @@ OBJC_EXPORT
 @property (nonatomic, weak) id<AVPDelegate> delegate;
 
 /**
+ * 设置渲染回调。
+ */
+@property (nonatomic, weak) id <CicadaRenderDelegate> renderDelegate;
+
+/**
+ @brief 设置AudioSession的Delegate
+ @param delegate Delegate对象
+ */
+/****
+ @brief 设置AudioSession的Delegate
+ @param delegate Delegate对象
+ */
++ (void)setAudioSessionDelegate:(id<CicadaAudioSessionDelegate>)delegate;
+
+/**
  @brief 是否打开log输出
  @param enableLog true表示输出log
  @see 使用setLogCallbackInfo
@@ -583,5 +668,6 @@ OBJC_EXPORT
  */
 +(void) setLogCallbackInfo:(AVPLogLevel)logLevel callbackBlock:(void (^)(AVPLogLevel logLevel,NSString* strLog))block;
 
-@end
+-(void) setVerifyStsCallback:(AVPStsStatus (^)(AVPStsInfo info)) callback;
 
+@end
