@@ -69,7 +69,7 @@
     player.enableHardwareDecoder = YES;
     player.loop = YES;
     player.autoPlay = YES;
-    AVPUrlSource *urlSource = [[AVPUrlSource alloc] urlWithString:@"http://magimg.gdljs.net/dl31.mp4"];
+    AVPUrlSource *urlSource = [[AVPUrlSource alloc] urlWithString:@"http://xcycdn-video.zhongguowangshi.com/live-video/dntupfrpf00.mp4"];
     
     [player setUrlSource:urlSource];
     AVPCacheConfig *cacheConfig = [[AVPCacheConfig alloc] init];

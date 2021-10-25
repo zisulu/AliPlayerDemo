@@ -124,6 +124,37 @@ OBJC_EXPORT
 @property (nonatomic, assign) int pixelBufferOutputFormat;
 
 @property(nonatomic, assign) int liveStartIndex;
+/**
+ @brief 禁用Audio.
+ */
+/****
+ @brief Disable audio track.
+ */
+@property (nonatomic, assign) BOOL disableAudio;
+
+/**
+ @brief 禁用Video
+ */
+/****
+ @brief Disable video track.
+ */
+@property (nonatomic, assign) BOOL disableVideo;
+
+/**
+@brief  进度跟新的频率。包括当前位置和缓冲位置。
+ */
+/****
+@brief Set the frequencies of Progress. Includes the current position and the buffer position.
+ */
+@property(nonatomic, assign) int positionTimerIntervalMs;
+
+/**
+ @brief 设置播放器后向buffer的最大值.
+ */
+/****
+ @brief set the maximum backward buffer duration of the player.
+ */
+@property(nonatomic, assign) uint64_t mMAXBackwardDuration;
 
 @end
 

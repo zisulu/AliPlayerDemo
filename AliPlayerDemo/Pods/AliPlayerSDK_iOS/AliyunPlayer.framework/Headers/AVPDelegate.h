@@ -91,6 +91,19 @@
 - (void)onCurrentPositionUpdate:(AliPlayer*)player position:(int64_t)position;
 
 /**
+ @brief 视频当前播放内容对应的utc时间回调
+ @param player 播放器player指针
+ @param time utc时间
+ */
+/****
+ @brief Current playback utc time callback.
+ @param player Player pointer.
+ @param position Current  utc time.
+ */
+
+- (void)onCurrentUtcTimeUpdate:(AliPlayer *)player time:(int64_t)time;
+
+/**
  @brief 视频缓存位置回调
  @param player 播放器player指针
  @param position 视频当前缓存位置
@@ -114,6 +127,20 @@
  */
 - (void)onLoadingProgress:(AliPlayer*)player progress:(float)progress;
 
+
+/**
+ @brief 当前下载速度回调
+ @param player 播放器player指针
+ @param speed bits per second
+ */
+/****
+ @brief current download speed callback.
+ @param player Player pointer.
+ @param speed bits per second.
+ */
+
+- (void)onCurrentDownloadSpeed:(AliPlayer *)player speed:(int64_t)speed;
+
 /**
  @brief 获取track信息回调
  @param player 播放器player指针
@@ -127,6 +154,14 @@
  @see AVPTrackInfo
  */
 - (void)onTrackReady:(AliPlayer*)player info:(NSArray<AVPTrackInfo*>*)info;
+
+/**
+ @brief 选择希望播放的流
+ @param player 播放器player指针
+ @param info track流信息数组
+ @see AVPTrackInfo
+ */
+- (int)onChooseTrackIndex:(AliPlayer *)player info:(NSArray<AVPTrackInfo *> *)info;
 
 /**
  @brief track切换完成回调
@@ -155,6 +190,22 @@
  @param URL subtitle url
  */
 - (void)onSubtitleExtAdded:(AliPlayer*)player trackIndex:(int)trackIndex URL:(NSString *)URL;
+
+
+/**
+ @brief 字幕头信息回调，ass字幕，如果实现了此回调，则播放器不会渲染字幕，由调用者完成渲染，否则播放器自动完成字幕的渲染
+ @param player 播放器player指针
+ @param index 字幕显示的索引号
+ @param header 头内容
+ */
+/****
+ @brief subtitle header info callback,
+        for ass, player will not render the subtitle when this is implemented by user
+ @param player Player pointer.
+ @param trackIndex Subtitle index.
+ @param URL subtitle url
+ */
+- (void)onSubtitleHeader:(AliPlayer *)player trackIndex:(int)trackIndex Header:(NSString *)header;
 
 /**
  @brief 字幕显示回调

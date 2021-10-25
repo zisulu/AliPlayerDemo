@@ -509,13 +509,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67WAZ4SGXX;
+				DEVELOPMENT_TEAM = 5JCN883Q49;
 				INFOPLIST_FILE = AliPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -527,13 +527,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 67WAZ4SGXX;
+				DEVELOPMENT_TEAM = 5JCN883Q49;
 				INFOPLIST_FILE = AliPlayerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyeah.AliPlayerDemo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

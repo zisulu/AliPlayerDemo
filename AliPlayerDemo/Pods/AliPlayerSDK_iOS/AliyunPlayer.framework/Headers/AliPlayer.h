@@ -15,6 +15,7 @@
 #import "AVPCacheConfig.h"
 @protocol CicadaAudioSessionDelegate;
 @protocol CicadaRenderDelegate;
+@protocol CicadaRenderingDelegate;
 
 OBJC_EXPORT
 @interface AliPlayer : NSObject
@@ -48,6 +49,18 @@ OBJC_EXPORT
  @see AVPUrlSource
  */
 - (void)setUrlSource:(AVPUrlSource*)source;
+
+/**
+ @brief 使用bitstream方式来播放视频
+ @param source AVPBitStreamSource的输入类型
+ @see AVPBitStreamSource
+ */
+/****
+ @brief Play by bit stream.
+ @param source AVPBitStreamSource type.
+ @see AVPBitStreamSource
+ */
+- (void)setBitStreamSource:(AVPBitStreamSource *)source;
 
 /**
  @brief 用vid和sts来播放视频，sts可参考：https://help.aliyun.com/document_detail/28756.html?spm=a2c4g.11186623.4.4.6f554c07q7B7aS
@@ -119,7 +132,15 @@ OBJC_EXPORT
 /****
  @brief Refresh the view in certain situations, for example, when the size of the view changes.
  */
--(void)redraw;
+- (void)redraw DEPRECATED_MSG_ATTRIBUTE("will not take effect");
+
+/**
+ @brief 清空画面。
+ */
+/****
+ @brief Clear screen.
+ */
+- (void)clearScreen;
 
 /**
  @brief 重置播放
@@ -368,6 +389,20 @@ OBJC_EXPORT
 -(void) selectExtSubtitle:(int)trackIndex enable:(BOOL)enable;
 
 /**
+ * 设置某路流相对于主时钟的延时时间，默认是0, 目前只支持外挂字幕
+ * @param index 流的索引
+ * @param time  延时，单位毫秒
+ */
+/****
+ * set the delay time of the stream
+ * @param index steam index
+ * @param time  ms
+ */
+
+- (void)setStreamDelayTime:(int)index time:(int)time;
+
+
+/**
  @brief 重新加载。比如网络超时时，可以重新加载。
  */
 /****
@@ -473,6 +508,14 @@ OBJC_EXPORT
  @brief Query the SDK version.
  */
 + (NSString*) getSDKVersion;
+
+/**
+ @brief 获取设备UUID
+ */
+/****
+ @brief Query device UUID.
+ */
++ (NSString *)getDeviceUUID;
 
 /**
  @brief 初始化播放器组件。这些组件是可裁剪的。App可删除相应动态库，去掉初始化组件代码，实现裁剪。
@@ -612,6 +655,23 @@ OBJC_EXPORT
 @property (nonatomic, readonly) int64_t currentPosition;
 
 /**
+@brief 获取当前播放位置的utc时间，支持KVO
+*/
+/****
+@brief Query the current playback utc time. KVO is supported.
+*/
+@property(nonatomic, readonly) int64_t currentUtcTime;
+
+
+/**
+ @brief 获取当前下载速度，支持KVO
+ */
+/****
+ @brief Query the current download speed. KVO is supported.
+ */
+@property(nonatomic, readonly) int64_t currentDownloadSpeed;
+
+/**
  @brief 获取已经缓存的位置，支持KVO
  */
 /****
@@ -632,7 +692,12 @@ OBJC_EXPORT
 /**
  * 设置渲染回调。
  */
-@property (nonatomic, weak) id <CicadaRenderDelegate> renderDelegate;
+@property(nonatomic, weak) id<CicadaRenderDelegate> renderDelegate __deprecated;
+
+@property(nonatomic, weak) id<CicadaRenderingDelegate> renderingDelegate;
+
+@property (nonatomic, weak) id <AVPEventReportParamsDelegate> eventReportParamsDelegate;
+
 
 /**
  @brief 设置AudioSession的Delegate
@@ -669,5 +734,47 @@ OBJC_EXPORT
 +(void) setLogCallbackInfo:(AVPLogLevel)logLevel callbackBlock:(void (^)(AVPLogLevel logLevel,NSString* strLog))block;
 
 -(void) setVerifyStsCallback:(AVPStsStatus (^)(AVPStsInfo info)) callback;
+/**
+ @brief 设置期望使用的播放器名字。
+ @param name 期望使用的播放器名字
+ */
+/****
+ @brief Set preper player name.
+ @param name preper player name.
+ */
+- (void)setPreferPlayerName:(NSString *)name;
+/**
+ @brief 获取播放时使用的播放器名字
+ */
+/****
+ @brief Get used player name
+ */
+- (NSString *)getPlayerName;
+
+/**
+ @brief 设置视频标签。值范围[0,99]。
+ */
+/****
+ @brief Set the video tags. Values range from [0,99].
+ */
+- (void)setVideoTag:(int *)tags size:(int)size;
+
+/**
+ @brief 发送用户自定义事件，将通过AVPEventReportParamsDelegate回调。事件 e = 5001。
+ */
+/****
+ @brief Send custom event, will callback through AVPEventReportParamsDelegate. Event id e = 5001.
+ */
+- (void)sendCustomEvent:(NSString *)args;
+
+
+/**
+ @brief 重连所有网络连接，网络路由发生变化后，调用此接口，可以让播放器所有的连接切换到新的路由上去。
+ */
+/****
+ @brief reconnect all connections, call this when netWork router changed, and the player will use new router.
+ */
+
++ (void)netWorkReConnect;
 
 @end

@@ -1,4 +1,3 @@
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunPlayer.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/alivcffmpeg.framework
-${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlivcConan.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunMediaDownloader.framework
